@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>test</title>
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+	</head>
+
+	<body>
+		<div class="main">
+			<h1>test</h1>
+			<form action="{{url_for('predict')}}" method="post">
+				<input type="text" name="category" 
+				placeholder="What category are you?" required="required" />
+
+				<input type="text" name="status" 
+				placeholder="Are you considered immortal?" required="required" />
+
+				<input type="text" name="gender" 
+				placeholder="What is your gender?" required="required" />
+
+				<input type="text" name="defense" 
+				placeholder="How high of defense do you have?" required="required" />
+
+				<input type="text" name="attack" 
+				placeholder="How high of attack do you have?" required="required" />
+
+				
+
+				<button type="submit" class="btn">Are you a god?</button>
+
+
+			</form>
+
+			<br>
+			<br>
+			<div class="predict">
+				{{prediction_text}}
+			</div>
+	
+
+	
+			
+	    </div>
+
+	</body>
+</html>
