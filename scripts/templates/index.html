@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title>test</title>
+		<title>AI and Greek Mythology</title>
 		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
@@ -10,7 +10,8 @@
 
 	<body>
 		<div class="main">
-			<h1>test</h1>
+			<h1>Would you be considered a god in the Greek Mythology world?</h1>
+			<p></p>
 			<form action="{{url_for('predict')}}" method="post">
 				<input type="text" name="category" 
 				placeholder="What category are you?" required="required" />
@@ -26,12 +27,7 @@
 
 				<input type="text" name="attack" 
 				placeholder="How high of attack do you have?" required="required" />
-
-				
-
 				<button type="submit" class="btn">Are you a god?</button>
-
-
 			</form>
 
 			<br>
