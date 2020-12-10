@@ -18,9 +18,9 @@ def predict():
 	prediction = model.predict(final_features)
 	output = round(prediction[0], 2)
 	if output == 1:
-		text = "a god."
+		text = " a god."
 	elif output == 0:
-		text = "not a god."
+		text = " not a god."
 	else:
 		return "error!"
 

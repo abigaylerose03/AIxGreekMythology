@@ -1,0 +1,43 @@
+body {
+	background-image: linear-gradient(to right, rgba(174,234, 255,0), rgba(174,234,255,1));
+}
+
+h1 {
+	font-family: 'GFS Didot', serif;
+
+}
+
+p {
+
+	font-family: 'GFS Didot', serif;
+
+}
+
+form input {
+	display: flex;
+  	flex-direction: column;
+  	margin-bottom: 20px;
+  	border-radius: 5px;
+  	width: 290px;
+  	font-family: 'Century Gothic', sans-serif;
+
+
+}
+
+form button {
+	border-radius: 20px;
+	background-color: #95fa98;
+  	border: none;
+  	color: black;
+  	width: 200px;
+  	height: 50px;
+  	font-size: 1rem;
+  	font-weight: bolder;
+
+}
+
+form button:hover {
+	border: 2px solid #95fa98;
+	background-color: transparent;
+}
+

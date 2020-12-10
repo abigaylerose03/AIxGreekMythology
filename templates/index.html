@@ -2,34 +2,46 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title>test</title>
+		<title>Mortal.io</title>
 		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=GFS+Didot&display=swap" rel="stylesheet">
+		
 		<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	</head>
 
 	<body>
-		<div class="main">
-			<h1>test</h1>
+			<h1>Play god or be played by god.</h1>
+			<p>
+			This is where Ancient Greek Mythological gods meets next-generation technology. 
+			<br/><br/>
+
+			Built the Decision Tree Classifer with 70% accuracy using Python, Tensorflow, and Keras API.
+			<br/>
+
+			These values are used by the machine-learning training model to predict your future.
+			</p>
+
 			<form action="{{url_for('predict')}}" method="post">
 				<input type="text" name="category" 
-				placeholder="What category are you?" required="required" />
+				placeholder="Category: 0 to 1000" required="required" />
 
 				<input type="text" name="status" 
-				placeholder="Are you considered immortal?" required="required" />
+				placeholder="Are you considered immortal? 0 no, 1 yes" required="required" />
 
 				<input type="text" name="gender" 
-				placeholder="What is your gender?" required="required" />
+				placeholder="What is your gender? 1 for male, 2 for female" required="required" />
 
 				<input type="text" name="defense" 
-				placeholder="How high of defense do you have?" required="required" />
+				placeholder="Defense: 0-90000" required="required" />
 
 				<input type="text" name="attack" 
-				placeholder="How high of attack do you have?" required="required" />
+				placeholder="Attack: 0-90000" required="required" />
 
-				
 
-				<button type="submit" class="btn">Are you a god?</button>
+				<button type="submit" class="btn">Submit</button>
 
 
 			</form>
@@ -39,11 +51,14 @@
 			<div class="predict">
 				{{prediction_text}}
 			</div>
-	
 
-	
-			
-	    </div>
+			<footer>
+				<div class="footer">
+					<button style="font-size:24px">Source Code <i class="fa fa-github"></i></button>
+
+				</div>
+
+			</footer>
 
 	</body>
 </html>
